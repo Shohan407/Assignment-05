@@ -35,7 +35,7 @@
                 <div class="flex flex-none gap-4">
                     <div class="flex gap-1 rounded-2xl bg-[#F4F7FF] justify-center items-center">
                         <img class="w-full h-8 p-1 ml-2 text-xl" src="assets/checkbox.png" alt="">
-                        <h3 class="p-2 text-xl font-bold">23</h3>
+                        <h3 id="change-number" class="p-2 text-xl font-bold">23</h3>
                     </div>
                     <div class="">
                         <div class="btn btn-ghost btn-circle avatar">
@@ -59,7 +59,7 @@
                     </div>
                     <div>
                         <p class="text-gray-500 ">Task Assigned</p>
-                        <p class="text-xl font-bold">05</p>
+                        <p id="change-date" class="text-xl font-bold">06</p>
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@
                 </div>
 
                 <!-- date -->
-                <div class="flex items-center justify-center gap-3 bg-[#F4F7FF] p-8 rounded-lg co">
+                <div class="flex items-center justify-center gap-3 bg-[#F4F7FF] p-8 rounded-lg">
                     <div class="p-4 bg-white rounded-full">
                         <img class="w-5 h-5" src="assets/calender.png" alt="">
                     </div>
@@ -93,7 +93,7 @@
 
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
                     <h3 class="inline-block p-2 mb-2 bg-white rounded-lg">ShopEase</h3>
-                    <h1 class="mb-2 text-xl font-semibold">Fix Mobile Button Issue</h1>
+                    <h1 id="1stCardHeading" class="mb-2 text-xl font-semibold">Fix Mobile Button Issue</h1>
                     <div class="pb-2 bg-white rounded-lg">
                         <p class="p-3 truncate opacity-50 ">
                             Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works
@@ -107,8 +107,8 @@
                             <h4 class="text-[#00303C] text-sm">Deadline</h4>
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
-                        <div>
-                            <button
+                        <div id="bbtn">
+                            <button id="card-btn"
                                 class=" bg-[#3752FD] text-base font-medium text-white px-3 py-2 rounded-lg ">Completed</button>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                 <!-- 2nd card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
                     <h3 class="inline-block p-2 mb-2 bg-white rounded-lg">CloudSync</h3>
-                    <h1 class="mb-2 text-xl font-semibold">Add Dark Mode</h1>
+                    <h1 id="2ndCardHeading" class="mb-2 text-xl font-semibold">Add Dark Mode</h1>
                     <div class="pb-2 bg-white rounded-lg">
                         <p class="p-3 truncate opacity-50 ">
                             Store the user's preference in <br> localStorage, update CSS variables dynamically, and
@@ -133,7 +133,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
                         <div>
-                            <button
+                            <button id="card-btn2"
                                 class=" bg-[#3752FD] text-base font-medium text-white px-3 py-2 rounded-lg ">Completed</button>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                 <!-- 3rd card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
                     <h3 class="inline-block p-2 mb-2 bg-white rounded-lg">SwiftPay</h3>
-                    <h1 class="mb-2 text-xl font-semibold">Optimize Home page</h1>
+                    <h1 id="3rdCardHeading" class="mb-2 text-xl font-semibold">Optimize Home page</h1>
                     <div class="pb-2 bg-white rounded-lg">
                         <p class="p-3 truncate opacity-50 ">
                             Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works
@@ -157,7 +157,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
                         <div>
-                            <button
+                            <button id="card-btn3"
                                 class=" bg-[#3752FD] text-base font-medium text-white px-3 py-2 rounded-lg ">Completed</button>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                 <!-- 4th card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
                     <h3 class="inline-block p-2 mb-2 bg-white rounded-lg">Meta</h3>
-                    <h1 class="mb-2 text-xl font-semibold">Add new emoji 🤲</h1>
+                    <h1 id="4thCardHeading" class="mb-2 text-xl font-semibold">Add new emoji 🤲</h1>
                     <div class="pb-2 bg-white rounded-lg">
                         <p class="p-3 truncate opacity-50 ">
                             Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works
@@ -180,7 +180,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
                         <div>
-                            <button
+                            <button id="card-btn4"
                                 class=" bg-[#3752FD] text-base font-medium text-white px-3 py-2 rounded-lg ">Completed</button>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                 <!-- 5th card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
                     <h3 class="inline-block p-2 mb-2 bg-white rounded-lg">Google LLC</h3>
-                    <h1 class="mb-2 text-xl font-semibold">Integrate OpenAI API </h1>
+                    <h1 id="5thCardHeading" class="mb-2 text-xl font-semibold">Integrate OpenAI API </h1>
                     <div class="pb-2 bg-white rounded-lg">
                         <p class="p-3 truncate opacity-50 ">
                             Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works
@@ -203,7 +203,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
                         <div>
-                            <button
+                            <button id="card-btn5"
                                 class=" bg-[#3752FD] text-base font-medium text-white px-3 py-2 rounded-lg ">Completed</button>
                         </div>
                     </div>
@@ -211,7 +211,7 @@
                 <!-- 6th card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
                     <h3 class="inline-block p-2 mb-2 bg-white rounded-lg">Glassdoar</h3>
-                    <h1 class="mb-2 text-xl font-semibold">Improve Job searching </h1>
+                    <h1 id="6thCardHeading" class="mb-2 text-xl font-semibold">Improve Job searching </h1>
                     <div class="pb-2 bg-white rounded-lg">
                         <p class="p-3 truncate opacity-50 ">
                             Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works
@@ -226,7 +226,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
                         <div>
-                            <button
+                            <button id="card-btn6"
                                 class=" bg-[#3752FD] text-base font-medium text-white px-3 py-2 rounded-lg ">Completed</button>
                         </div>
                     </div>
@@ -243,11 +243,20 @@
                 <img src="assets/activity.png" alt="">
                 <h1>Activity Log</h1>
             </div>
-            <div class="flex items-center justify-center mt-4">
-                <button class=" bg-[#3752FD] text-base font-medium text-white px-3 py-2 rounded-lg ">Clear
+            <div id="" class="flex items-center justify-center mt-4">
+                <button id="clear-history"
+                    class=" bg-[#3752FD] text-base font-medium text-white px-3 py-2 rounded-lg ">Clear
                     History</button>
             </div>
             <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <div id="All-history">
+                <h3 id="active-text"></h3>
+                <h3 id="active-text2"></h3>
+                <h3 id="active-text3"></h3>
+                <h3 id="active-text4"></h3>
+                <h3 id="active-text5"></h3>
+                <h3 id="active-text6"></h3>
+            </div>
         </section>
 
 
@@ -256,4 +265,5 @@
 
     <script src="script/activity-history.js"></script>
 </body>
+
 </html>

@@ -1,15 +1,5 @@
-
-const historyList = document.getElementById('All-history');
-document.getElementById('clear-history').addEventListener('click',
-    function (event) {
-        event.preventDefault();
-        historyList.innerText = '';
-
-    });
-
-
 // background color change section
-const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+const colors = ['#FF6F61', '#6B5B95', '#88B04B', '#F7CAC9', '#92A8D1', '#955251','red', 'blue', 'green', 'yellow', 'purple', 'orange'];
 let index = 0;
 
 document.getElementById('background-color').addEventListener('click',
@@ -27,6 +17,21 @@ document.addEventListener("DOMContentLoaded", function(){
       });
       document.getElementById("current-Date").innerHTML = `${weekday}<br>${currentDate}`;
 });
+
+
+
+
+
+
+const historyList = document.getElementById('All-history');
+document.getElementById('clear-history').addEventListener('click',
+    function (event) {
+        event.preventDefault();
+        historyList.innerText = '';
+
+    });
+
+
 
 // 1st active history js
 const outputHeading = document.getElementById('active-text');
@@ -52,7 +57,7 @@ document.getElementById('card-btn').addEventListener('click',
         this.setAttribute("disabled", true);
         this.classList.add("opacity-20",);
 
-        alert("Board Update Succesfully");
+        alert("Board Updated Succesfully");
 
     });
 // 2nd active history js
@@ -80,7 +85,7 @@ document.getElementById('card-btn2').addEventListener('click',
         this.setAttribute("disabled", true);
         this.classList.add("opacity-20",);
 
-        alert("Board Update Succesfully");
+        alert("Board Updated Succesfully");
     });
 // 3rd active history js
 const outputHeading3 = document.getElementById('active-text3');
@@ -107,7 +112,7 @@ document.getElementById('card-btn3').addEventListener('click',
         this.setAttribute("disabled", true);
         this.classList.add("opacity-20",);
 
-        alert("Board Update Succesfully");
+        alert("Board Updated Succesfully");
     });
 // 4th active history js
 const outputHeading4 = document.getElementById('active-text4');
@@ -134,7 +139,7 @@ document.getElementById('card-btn4').addEventListener('click',
         this.setAttribute("disabled", true);
         this.classList.add("opacity-20",);
 
-        alert("Board Update Succesfully");
+        alert("Board Updated Succesfully");
     });
 // 5th active history js
 const outputHeading5 = document.getElementById('active-text5');
@@ -161,7 +166,7 @@ document.getElementById('card-btn5').addEventListener('click',
         this.setAttribute("disabled", true);
         this.classList.add("opacity-20",);
 
-        alert("Board Update Succesfully");
+        alert("Board Updated Succesfully");
     });
 // 6th active history js
 const outputHeading6 = document.getElementById('active-text6');
@@ -188,6 +193,6 @@ document.getElementById('card-btn6').addEventListener('click',
         this.setAttribute("disabled", true);
         this.classList.add("opacity-20",);
 
-        alert("Board Update Succesfully");
-        alert("congrates!!! You have completed All the current task");
+        alert("Board Updated Succesfully");
+        alert("Congrates!!! You have completed All the current task");
     });
